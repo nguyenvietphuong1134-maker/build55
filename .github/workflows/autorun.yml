@@ -38,8 +38,9 @@ jobs:
             --headless \
             --node-id "$NODE_ID" \
             --max-threads 8 \
-            --max-difficulty extra_large_5
+            --max-difficulty extra_large_3
         env:
           RUST_BACKTRACE: 1
           NODE_ID: ${{ secrets.NODE_ID }}
+
 
