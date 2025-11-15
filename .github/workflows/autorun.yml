@@ -28,7 +28,6 @@ jobs:
         run: |
           cd nexus-cli/clients/cli
           cargo build --release
-
       - name: Run Nexus Node (6h continuous)
         run: |
           cd nexus-cli/clients/cli
@@ -42,4 +41,3 @@ jobs:
         env:
           RUST_BACKTRACE: 1
           NODE_ID: ${{ secrets.NODE_ID }}
-
